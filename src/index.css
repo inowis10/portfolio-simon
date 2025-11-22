@@ -726,7 +726,7 @@ p {
 
 .pyme-title {
   font-size: clamp(2rem, 4vw, 2.5rem);
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   color: #FFFFFF;
   letter-spacing: 1px;
 }
@@ -734,7 +734,7 @@ p {
 .pyme-description {
   font-size: 1.15rem;
   color: #e0e0e0;
-  margin-bottom: 3.5rem;
+  margin-bottom: 5rem;
   line-height: 2.2;
   letter-spacing: 0.5px;
   max-width: 800px;
@@ -1470,4 +1470,12 @@ a.footer-contact-item:hover {
   font-size: 0.9rem;
 }
 
+
+
+.projects-cta {
+  text-align: center;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
 
