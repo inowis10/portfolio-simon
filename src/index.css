@@ -1828,3 +1828,62 @@ a.footer-contact-item:hover {
         gap: 0.75rem !important;
     }
 }
+
+/* ========================================
+   CONTACT PAGE - RESPONSIVE FIXES
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Contact page cards container */
+    .contact-card {
+        min-width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* Override inline grid for contact cards */
+    div[style*='repeat(auto-fit, minmax(220px'] {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        padding: 0 1rem !important;
+    }
+
+    /* Contact form container */
+    .contact-form-container {
+        padding: 0 1rem !important;
+    }
+
+    .contact-form {
+        padding: 2rem 1.5rem !important;
+        max-width: 100% !important;
+    }
+
+    /* Form title */
+    .form-title {
+        font-size: 1.5rem !important;
+    }
+
+    /* Form inputs */
+    .form-input,
+    .form-label {
+        width: 100% !important;
+    }
+
+    /* Submit button */
+    .btn-submit {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-card {
+        padding: 1.5rem 1rem !important;
+    }
+
+    .contact-form {
+        padding: 1.5rem 1rem !important;
+    }
+
+    .form-title {
+        font-size: 1.25rem !important;
+    }
+}
