@@ -1479,3 +1479,25 @@ a.footer-contact-item:hover {
   justify-content: center;
 }
 
+
+/* Animations for Projects Page */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-up-text {
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0; /* Start invisible */
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+

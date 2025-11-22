@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import WelcomeModal from './WelcomeModal'
 
 function Layout() {
     const location = useLocation()
@@ -39,6 +40,7 @@ function Layout() {
 
     return (
         <>
+            <WelcomeModal />
             <Navbar />
             <Outlet />
             <Footer />
