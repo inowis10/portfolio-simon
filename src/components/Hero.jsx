@@ -3,9 +3,26 @@ import { Link } from 'react-router-dom'
 
 function Hero() {
     const [displayedText, setDisplayedText] = useState('')
+    const [startAnimation, setStartAnimation] = useState(false)
     const fullText = 'Soy Simón, Periodista Digital.'
 
     useEffect(() => {
+        // Check if modal has been seen
+        const hasSeenModal = sessionStorage.getItem('hasSeenWelcomeModal')
+
+        if (hasSeenModal) {
+            setStartAnimation(true)
+        } else {
+            // Listen for modal close event
+            const handleModalClose = () => setStartAnimation(true)
+            window.addEventListener('welcomeModalClosed', handleModalClose)
+            return () => window.removeEventListener('welcomeModalClosed', handleModalClose)
+        }
+    }, [])
+
+    useEffect(() => {
+        if (!startAnimation) return
+
         let currentIndex = 0
         const typingInterval = setInterval(() => {
             if (currentIndex <= fullText.length) {
@@ -17,7 +34,7 @@ function Hero() {
         }, 50) // 50ms por carácter = rápido y fluido
 
         return () => clearInterval(typingInterval)
-    }, [])
+    }, [startAnimation])
 
     // Función para renderizar el texto con el span en "Periodista Digital"
     const renderTextWithGradient = () => {

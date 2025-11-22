@@ -19,8 +19,10 @@ const WelcomeModal = () => {
 
     const handleClose = () => {
         setIsOpen(false);
-        // Mark as seen so it doesn't annoy the user on refresh (optional, can be removed if user wants it every time)
+        // Mark as seen so it doesn't annoy the user on refresh
         sessionStorage.setItem('hasSeenWelcomeModal', 'true');
+        // Dispatch event to notify Hero component
+        window.dispatchEvent(new Event('welcomeModalClosed'));
     };
 
     if (!isOpen) return null;
