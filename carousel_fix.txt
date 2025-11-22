@@ -1,0 +1,72 @@
+﻿/* ========================================
+   TOOLS CAROUSEL
+   ======================================== */
+.tools-section {
+  background-color: #091e2d;
+  overflow: hidden;
+}
+
+.tools-section .section-title {
+  color: #ffffff;
+}
+
+.tools-section .section-subtitle {
+  color: #e0e0e0;
+}
+
+.carousel-container {
+  margin-top: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 3rem;
+  animation: scroll 30s linear infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.tool-item {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 120px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tool-item:hover {
+  box-shadow: 0 0 25px rgba(246, 183, 64, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+  filter: brightness(1.05);
+}
+
+.tool-icon {
+  font-size: 3rem;
+}
+
+.tool-logo {
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
