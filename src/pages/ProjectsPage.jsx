@@ -37,7 +37,7 @@ function ProjectsPage() {
             title: 'Campaña digital integral',
             category: 'Marketing Digital',
             description: 'Estrategia completa de marketing digital para una marca emergente, optimizando contenido, pauta y analítica para obtener resultados medibles..',
-            objective: 'Aumentar el reconocimiento de marca y generar leads cualificados en un periodo de 3 meses.',
+            objective: 'Con Uniformes Valet quise aumentar el reconocimiento de marca y generar leads cualificados en un periodo de 3 meses.',
             tools: ['Google Ads', 'Meta Business', 'Analytics', 'Illustrator'],
             images: [campanaDigital1, campanaDigital2, campanaDigital3, campanaDigital4, campanaDigital5, campanaDigital6] // Array de 6 imágenes
         },
@@ -46,7 +46,7 @@ function ProjectsPage() {
             title: 'Gestión de redes y contenido',
             category: 'Community Manager',
             description: 'Planificación, creación de contenido y gestión diaria de la comunidad, aplicando buenas prácticas de tono, identidad digital y análisis de métricas.',
-            objective: 'Impulsar el crecimiento orgánico y mejorar la interacción semanal en redes sociales.',
+            objective: 'Impulsar el crecimiento orgánico y mejorar la interacción semanal en redes sociales de Street Coins empresa dedicada a la venta de productos con estampados personalizados.',
             tools: ['Meta Business', 'Canva', 'Analytics', 'Semrush'],
             images: [gestionRedes1, gestionRedes2, gestionRedes3, gestionRedes4, gestionRedes5, gestionRedes6]
         },
@@ -55,7 +55,7 @@ function ProjectsPage() {
             title: 'Estrategia de redes para marca de servicios',
             category: 'Community Manager',
             description: 'Desarrollo de parrillas de contenido, storytelling aplicado a marca y optimización constante según insights mensuales.',
-            objective: 'Construir una presencia digital sólida y aumentar el engagement mensual.',
+            objective: 'Construir una presencia digital sólida y aumentar el engagement mensual de la panadería Dolci da Forno, a través de contenido alineado con la marca y su frase "sabor casero''.',
             tools: ['Meta Ads', 'Canva', 'Hootsuite', 'Premiere'],
             images: [estrategiaRedes1, estrategiaRedes2, estrategiaRedes3, estrategiaRedes4, estrategiaRedes5, estrategiaRedes6]
         },
