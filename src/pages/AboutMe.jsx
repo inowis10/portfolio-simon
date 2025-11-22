@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react'
+ï»¿import { useEffect, useState, useRef } from 'react'
 import CV from '../assets/CV.pdf'
 import Logo1 from '../assets/Logo 1.png'
 import Logo2 from '../assets/Logo 2.png'
@@ -101,7 +101,7 @@ function AboutMe() {
                         <span style={{ color: '#e0e0e0' }}>Marketing Digital</span>
                     </h1>
                     <p className="slide-up-text delay-200" style={{ fontSize: '1rem', color: '#e0e0e0', maxWidth: '800px', margin: '0 auto', lineHeight: '1.8' }}>
-                        Profesional digital orientado a resultados, con experiencia en contenido, métricas y gestión de comunidades. Creo mensajes claros y visuales que impulsan alcance, interacción y una presencia online coherente.                    </p>
+                        Profesional digital orientado a resultados, con experiencia en contenido, mï¿½tricas y gestiï¿½n de comunidades. Creo mensajes claros y visuales que impulsan alcance, interacciï¿½n y una presencia online coherente.                    </p>
 
                     <div style={{ marginTop: '2.5rem' }}>
                         <a
@@ -146,7 +146,7 @@ function AboutMe() {
                                 textTransform: 'uppercase',
                                 margin: 0
                             }}>
-                                Educación
+                                Educaciï¿½n
                             </h2>
                         </div>
 
@@ -279,7 +279,7 @@ function AboutMe() {
                                     </span>
                                 </div>
                                 <p style={{ fontSize: '0.9rem', color: '#e0e0e0', lineHeight: '1.6' }}>
-                                    Redacción de contenido digital para marketing, gestión de WordPress y ejecución de campañas de Email Marketing.
+                                    RedacciÃ³n de contenido digital para marketing, gestiÃ³n de WordPress y ejecuciÃ³n de campaÃ±as de Email Marketing.
                                 </p>
                             </div>
 
@@ -312,7 +312,7 @@ function AboutMe() {
                                     </span>
                                 </div>
                                 <p style={{ fontSize: '0.9rem', color: '#e0e0e0', lineHeight: '1.6' }}>
-                                    Optimización SEO logrando +35% en tráfico orgánico. Gestión de redes sociales y análisis con Google Analytics.
+                                    OptimizaciÃ³n SEO logrando +35% en trÃ¡fico orgÃ¡nico. GestiÃ³n de redes sociales y anÃ¡lisis con Google Analytics.
                                 </p>
                             </div>
 
@@ -345,7 +345,7 @@ function AboutMe() {
                                     </span>
                                 </div>
                                 <p style={{ fontSize: '0.9rem', color: '#e0e0e0', lineHeight: '1.6' }}>
-                                    Creación de contenido audiovisual para intranet y redes, fortaleciendo la cultura corporativa mediante branding interno.
+                                    CreaciÃ³n de contenido audiovisual para intranet y redes, fortaleciendo la cultura corporativa mediante branding interno.
                                 </p>
                             </div>
                         </div>
@@ -381,7 +381,7 @@ function AboutMe() {
                             {/* MÃ©tricas */}
                             <div className="tool-category fade-in">
                                 <h3 style={{ fontSize: '0.75rem', fontWeight: '700', color: '#f6b740', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
-                                    Métricas
+                                    MÃ©tricas
                                 </h3>
                                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '1.5rem' }}>
                                     <div className="tool-card-hover" style={{
@@ -438,7 +438,7 @@ function AboutMe() {
                             {/* DiseÃ±o */}
                             <div className="tool-category fade-in">
                                 <h3 style={{ fontSize: '0.75rem', fontWeight: '700', color: '#f6b740', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
-                                    Diseño
+                                    DiseÃ±o
                                 </h3>
                                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '1.5rem' }}>
                                     <div className="tool-card-hover" style={{
@@ -495,7 +495,7 @@ function AboutMe() {
                             {/* GestiÃ³n */}
                             <div className="tool-category fade-in">
                                 <h3 style={{ fontSize: '0.75rem', fontWeight: '700', color: '#f6b740', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
-                                    Gestión
+                                    GestiÃ³n
                                 </h3>
                                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '1.5rem' }}>
                                     <div className="tool-card-hover" style={{
@@ -609,7 +609,7 @@ function AboutMe() {
                                     {count2}+
                                 </div>
                                 <div style={{ fontSize: '0.75rem', color: '#888888', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '600' }}>
-                                    Años de Experiencia
+                                    AÃ±os de Experiencia
                                 </div>
                             </div>
 
