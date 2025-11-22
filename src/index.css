@@ -1,5 +1,5 @@
-﻿/* ========================================
-   PORTFOLIO WEBSITE - SIMÓN SFLA
+/* ========================================
+   PORTFOLIO WEBSITE - SIM�N SFLA
    Minimalist Design System
    ======================================== */
 
@@ -1473,4 +1473,28 @@ a.footer-contact-item:hover {
 .education-year {
   color: #e0e0e0;
   font-size: 0.9rem;
+}
+
+/* ========================================
+   SPECIAL TEXT ANIMATIONS
+   ======================================== */
+.special-text-title {
+  opacity: 0;
+  animation: slideUpFade 0.8s ease-out forwards;
+}
+
+.special-text-subtitle {
+  opacity: 0;
+  animation: slideUpFade 0.8s ease-out 0.2s forwards;
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
