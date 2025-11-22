@@ -1,5 +1,14 @@
-﻿import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import CV from '../assets/CV.pdf'
+import Logo1 from '../assets/Logo 1.png'
+import Logo2 from '../assets/Logo 2.png'
+import Logo3 from '../assets/Logo 3.png'
+import Logo4 from '../assets/Logo 4.png'
+import Logo5 from '../assets/Logo 5.png'
+import Logo6 from '../assets/Logo 6.png'
+import Logo7 from '../assets/Logo 7.png'
+import Logo8 from '../assets/Logo 8.png'
+import Logo9 from '../assets/Logo 9.png'
 
 function AboutMe() {
     const [count1, setCount1] = useState(0);
@@ -92,7 +101,7 @@ function AboutMe() {
                         <span style={{ color: '#e0e0e0' }}>Marketing Digital</span>
                     </h1>
                     <p className="slide-up-text delay-200" style={{ fontSize: '1rem', color: '#e0e0e0', maxWidth: '800px', margin: '0 auto', lineHeight: '1.8' }}>
-                        Profesional digital orientado a resultados, con experiencia en contenido, métricas y gestión de comunidades. Creo mensajes claros y visuales que impulsan alcance, interacción y una presencia online coherente.                    </p>
+                        Profesional digital orientado a resultados, con experiencia en contenido, m�tricas y gesti�n de comunidades. Creo mensajes claros y visuales que impulsan alcance, interacci�n y una presencia online coherente.                    </p>
 
                     <div style={{ marginTop: '2.5rem' }}>
                         <a
@@ -137,7 +146,7 @@ function AboutMe() {
                                 textTransform: 'uppercase',
                                 margin: 0
                             }}>
-                                Educación
+                                Educaci�n
                             </h2>
                         </div>
 
@@ -270,7 +279,7 @@ function AboutMe() {
                                     </span>
                                 </div>
                                 <p style={{ fontSize: '0.9rem', color: '#e0e0e0', lineHeight: '1.6' }}>
-                                    Redacción de contenido digital para marketing, gestión de WordPress y ejecución de campañas de Email Marketing.
+                                    Redacci�n de contenido digital para marketing, gesti�n de WordPress y ejecuci�n de campa�as de Email Marketing.
                                 </p>
                             </div>
 
@@ -303,7 +312,7 @@ function AboutMe() {
                                     </span>
                                 </div>
                                 <p style={{ fontSize: '0.9rem', color: '#e0e0e0', lineHeight: '1.6' }}>
-                                    Optimización SEO logrando +35% en tráfico orgánico. Gestión de redes sociales y análisis con Google Analytics.
+                                    Optimizaci�n SEO logrando +35% en tr�fico org�nico. Gesti�n de redes sociales y an�lisis con Google Analytics.
                                 </p>
                             </div>
 
@@ -336,7 +345,7 @@ function AboutMe() {
                                     </span>
                                 </div>
                                 <p style={{ fontSize: '0.9rem', color: '#e0e0e0', lineHeight: '1.6' }}>
-                                    Creación de contenido audiovisual para intranet y redes, fortaleciendo la cultura corporativa mediante branding interno.
+                                    Creaci�n de contenido audiovisual para intranet y redes, fortaleciendo la cultura corporativa mediante branding interno.
                                 </p>
                             </div>
                         </div>
@@ -369,10 +378,10 @@ function AboutMe() {
 
                         {/* Tools Grid by Category */}
                         <div style={{ display: 'grid', gap: '2.5rem' }}>
-                            {/* MÃ©tricas */}
+                            {/* Métricas */}
                             <div className="tool-category fade-in">
                                 <h3 style={{ fontSize: '0.75rem', fontWeight: '700', color: '#f6b740', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
-                                    Métricas
+                                    M�tricas
                                 </h3>
                                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '1.5rem' }}>
                                     <div className="tool-card-hover" style={{
@@ -388,7 +397,7 @@ function AboutMe() {
                                         minHeight: '120px',
                                         cursor: 'pointer'
                                     }}>
-                                        <img src="/src/assets/Logo 1.png" alt="Google Ads" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
+                                        <img src={Logo1} alt="Google Ads" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
                                         <span style={{ fontSize: '0.7rem', color: '#888888', marginTop: '0.75rem', textAlign: 'center', fontWeight: '500' }}>Google Ads</span>
                                     </div>
                                     <div className="tool-card-hover" style={{
@@ -404,7 +413,7 @@ function AboutMe() {
                                         minHeight: '120px',
                                         cursor: 'pointer'
                                     }}>
-                                        <img src="/src/assets/Logo 7.png" alt="Google Analytics" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
+                                        <img src={Logo7} alt="Google Analytics" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
                                         <span style={{ fontSize: '0.7rem', color: '#888888', marginTop: '0.75rem', textAlign: 'center', fontWeight: '500' }}>Google Analytics</span>
                                     </div>
                                     <div className="tool-card-hover" style={{
@@ -420,16 +429,16 @@ function AboutMe() {
                                         minHeight: '120px',
                                         cursor: 'pointer'
                                     }}>
-                                        <img src="/src/assets/Logo 4.png" alt="Excel" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
+                                        <img src={Logo4} alt="Excel" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
                                         <span style={{ fontSize: '0.7rem', color: '#888888', marginTop: '0.75rem', textAlign: 'center', fontWeight: '500' }}>Excel</span>
                                     </div>
                                 </div>
                             </div>
 
-                            {/* DiseÃ±o */}
+                            {/* Diseño */}
                             <div className="tool-category fade-in">
                                 <h3 style={{ fontSize: '0.75rem', fontWeight: '700', color: '#f6b740', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
-                                    Diseño
+                                    Dise�o
                                 </h3>
                                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '1.5rem' }}>
                                     <div className="tool-card-hover" style={{
@@ -445,7 +454,7 @@ function AboutMe() {
                                         minHeight: '120px',
                                         cursor: 'pointer'
                                     }}>
-                                        <img src="/src/assets/Logo 2.png" alt="Canva" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
+                                        <img src={Logo2} alt="Canva" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
                                         <span style={{ fontSize: '0.7rem', color: '#888888', marginTop: '0.75rem', textAlign: 'center', fontWeight: '500' }}>Canva</span>
                                     </div>
                                     <div className="tool-card-hover" style={{
@@ -461,7 +470,7 @@ function AboutMe() {
                                         minHeight: '120px',
                                         cursor: 'pointer'
                                     }}>
-                                        <img src="/src/assets/Logo 5.png" alt="Illustrator" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
+                                        <img src={Logo5} alt="Illustrator" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
                                         <span style={{ fontSize: '0.7rem', color: '#888888', marginTop: '0.75rem', textAlign: 'center', fontWeight: '500' }}>Illustrator</span>
                                     </div>
                                     <div className="tool-card-hover" style={{
@@ -477,16 +486,16 @@ function AboutMe() {
                                         minHeight: '120px',
                                         cursor: 'pointer'
                                     }}>
-                                        <img src="/src/assets/Logo 6.png" alt="Premiere" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
+                                        <img src={Logo6} alt="Premiere" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
                                         <span style={{ fontSize: '0.7rem', color: '#888888', marginTop: '0.75rem', textAlign: 'center', fontWeight: '500' }}>Premiere</span>
                                     </div>
                                 </div>
                             </div>
 
-                            {/* GestiÃ³n */}
+                            {/* Gestión */}
                             <div className="tool-category fade-in">
                                 <h3 style={{ fontSize: '0.75rem', fontWeight: '700', color: '#f6b740', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1.5rem' }}>
-                                    Gestión
+                                    Gesti�n
                                 </h3>
                                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '1.5rem' }}>
                                     <div className="tool-card-hover" style={{
@@ -502,7 +511,7 @@ function AboutMe() {
                                         minHeight: '120px',
                                         cursor: 'pointer'
                                     }}>
-                                        <img src="/src/assets/Logo 3.png" alt="Power BI" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
+                                        <img src={Logo3} alt="Power BI" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
                                         <span style={{ fontSize: '0.7rem', color: '#888888', marginTop: '0.75rem', textAlign: 'center', fontWeight: '500' }}>Power BI</span>
                                     </div>
                                     <div className="tool-card-hover" style={{
@@ -518,7 +527,7 @@ function AboutMe() {
                                         minHeight: '120px',
                                         cursor: 'pointer'
                                     }}>
-                                        <img src="/src/assets/Logo 8.png" alt="Mailchimp" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
+                                        <img src={Logo8} alt="Mailchimp" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
                                         <span style={{ fontSize: '0.7rem', color: '#888888', marginTop: '0.75rem', textAlign: 'center', fontWeight: '500' }}>Mailchimp</span>
                                     </div>
                                     <div className="tool-card-hover" style={{
@@ -534,7 +543,7 @@ function AboutMe() {
                                         minHeight: '120px',
                                         cursor: 'pointer'
                                     }}>
-                                        <img src="/src/assets/Logo 9.png" alt="WordPress" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
+                                        <img src={Logo9} alt="WordPress" style={{ width: '48px', height: '48px', objectFit: 'contain', filter: 'grayscale(20%)', transition: 'all 0.3s ease' }} />
                                         <span style={{ fontSize: '0.7rem', color: '#888888', marginTop: '0.75rem', textAlign: 'center', fontWeight: '500' }}>WordPress</span>
                                     </div>
                                 </div>
@@ -600,7 +609,7 @@ function AboutMe() {
                                     {count2}+
                                 </div>
                                 <div style={{ fontSize: '0.75rem', color: '#888888', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '600' }}>
-                                    Años de Experiencia
+                                    A�os de Experiencia
                                 </div>
                             </div>
 
@@ -629,4 +638,5 @@ function AboutMe() {
 }
 
 export default AboutMe
+
 
