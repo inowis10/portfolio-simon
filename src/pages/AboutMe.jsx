@@ -101,7 +101,7 @@ function AboutMe() {
                         <span style={{ color: '#e0e0e0' }}>Marketing Digital</span>
                     </h1>
                     <p className="slide-up-text delay-200" style={{ fontSize: '1rem', color: '#e0e0e0', maxWidth: '800px', margin: '0 auto', lineHeight: '1.8' }}>
-                        Profesional digital orientado a resultados, con experiencia en contenido, m�tricas y gesti�n de comunidades. Creo mensajes claros y visuales que impulsan alcance, interacci�n y una presencia online coherente.                    </p>
+                        Profesional digital orientado a resultados, con experiencia en contenido, métricas y gestión de comunidades. Creo mensajes claros y visuales que impulsan alcance, interacción y una presencia online coherente.                    </p>
 
                     <div style={{ marginTop: '2.5rem' }}>
                         <a
