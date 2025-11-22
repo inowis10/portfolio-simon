@@ -26,15 +26,36 @@ const WelcomeModal = () => {
     if (!isOpen) return null;
 
     return (
-        <div className="welcome-modal-overlay">
-            <div className="welcome-modal-content">
+        <div className="welcome-modal-overlay" onClick={handleClose}>
+            <div className="welcome-modal-content" onClick={(e) => e.stopPropagation()}>
+                <button className="welcome-close-btn" onClick={handleClose} aria-label="Cerrar">
+                    ✕
+                </button>
                 <div className="welcome-modal-inner">
-                    <h2 className="welcome-title">¡Hola, Bienvenido!</h2>
+                    <div className="welcome-icon">👋</div>
+                    <h2 className="welcome-title">¡Hola! Soy Simón</h2>
+                    <p className="welcome-subtitle">Periodista Digital & Desarrollador Web</p>
                     <p className="welcome-text">
-                        Gracias por visitar mi portafolio. Aquí encontrarás mis últimos proyectos y trabajos en desarrollo web.
+                        Bienvenido a mi espacio digital. Aquí encontrarás mis proyectos de comunicación,
+                        estrategias digitales y desarrollos web que fusionan creatividad con tecnología.
                     </p>
+                    <div className="welcome-highlights">
+                        <div className="highlight-item">
+                            <span className="highlight-icon">📱</span>
+                            <span>Marketing Digital</span>
+                        </div>
+                        <div className="highlight-item">
+                            <span className="highlight-icon">💻</span>
+                            <span>Desarrollo Web</span>
+                        </div>
+                        <div className="highlight-item">
+                            <span className="highlight-icon">✍️</span>
+                            <span>Contenido Creativo</span>
+                        </div>
+                    </div>
                     <button className="welcome-button" onClick={handleClose}>
-                        Ver Portafolio
+                        <span>Explorar Portafolio</span>
+                        <span className="button-arrow">→</span>
                     </button>
                 </div>
             </div>
