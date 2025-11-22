@@ -1758,3 +1758,73 @@ a.footer-contact-item:hover {
         padding: 0.5rem 0;
     }
 }
+
+/* ========================================
+   ABOUT ME PAGE - RESPONSIVE FIXES
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* About Me Section */
+    .section-lg {
+        min-height: auto !important;
+        padding-top: 100px !important;
+        padding-bottom: 2rem !important;
+    }
+
+    /* Override inline styles for text containers */
+    .section-lg p[style*='maxWidth'] {
+        max-width: 100% !important;
+        font-size: 0.95rem !important;
+        padding: 0 1rem !important;
+    }
+
+    /* Fix grid layouts with inline styles */
+    .section-lg div[style*='gridTemplateColumns'] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Fix flex containers with space-between */
+    .section-lg div[style*='space-between'] {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.5rem !important;
+    }
+
+    /* Education and Experience cards */
+    .section-lg div[style*='maxWidth: 900px'] {
+        max-width: 100% !important;
+        padding: 0 1rem !important;
+    }
+
+    /* Tool grids */
+    .section-lg div[style*='minmax(100px'] {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)) !important;
+        gap: 1rem !important;
+    }
+
+    /* Cards with minmax(280px) */
+    .section-lg div[style*='minmax(280px'] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-lg {
+        padding-top: 80px !important;
+    }
+
+    /* Smaller text on small mobile */
+    .section-lg h2 {
+        font-size: 1.5rem !important;
+    }
+
+    .section-lg p {
+        font-size: 0.9rem !important;
+    }
+
+    /* Tool grids even smaller */
+    .section-lg div[style*='minmax(100px'] {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)) !important;
+        gap: 0.75rem !important;
+    }
+}
