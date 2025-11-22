@@ -592,6 +592,9 @@ p {
   overflow: hidden;
   transition: all 0.3s ease;
   position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -602,19 +605,27 @@ p {
 
 .project-image {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 140px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.project-info {
+.project-content {
   padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-title {
   font-size: 1.1rem;
   color: #FFFFFF;
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .project-description {
@@ -622,24 +633,25 @@ p {
   color: #e0e0e0;
   margin-bottom: 1.5rem;
   line-height: 1.5;
+  flex-grow: 1;
 }
 
-.project-link {
-  color: #f6b740;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
+.project-tags {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  transition: gap 0.3s ease;
 }
 
-.project-link:hover {
-  gap: 0.8rem;
+.tag {
+  background-color: rgba(246, 183, 64, 0.1);
+  color: #f6b740;
+  padding: 0.25rem 0.75rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
-.carousel-btn {
+.carousel-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -658,18 +670,41 @@ p {
   backdrop-filter: blur(4px);
 }
 
-.carousel-btn:hover {
+.carousel-nav:hover {
   background-color: #f6b740;
   color: #091e2d;
   transform: translateY(-50%) scale(1.1);
 }
 
-.carousel-btn.prev {
-  left: 10px;
+.carousel-nav-prev {
+  left: 0;
 }
 
-.carousel-btn.next {
-  right: 10px;
+.carousel-nav-next {
+  right: 0;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+  background-color: #f6b740;
+  width: 24px;
+  border-radius: 4px;
 }
 
 /* ========================================
