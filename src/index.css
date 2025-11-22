@@ -1896,7 +1896,7 @@ a.footer-contact-item:hover {
     /* Fix footer contact items alignment */
     .footer-contact-item {
         display: flex !important;
-        align-items: center !important;
+        align-items: flex-start !important;
         gap: 0.75rem !important;
         text-align: left !important;
         justify-content: flex-start !important;
@@ -1910,21 +1910,28 @@ a.footer-contact-item:hover {
     }
 
     .footer-column {
-        text-align: center !important;
+        text-align: left !important;
     }
 
     .footer-column h3 {
-        text-align: center !important;
+        text-align: left !important;
     }
 
     /* Ensure contact items start from left when footer is centered */
     .footer-contact {
         width: 100% !important;
-        align-items: center !important;
+        align-items: flex-start !important;
     }
 
     .footer-contact-item {
         width: auto !important;
         max-width: 300px !important;
     }
+}
+
+/* Mobile optimization for carousel */
+@media (max-width: 768px) {
+  .carousel-track {
+    animation-duration: 10s;
+  }
 }
