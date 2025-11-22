@@ -532,19 +532,6 @@ p {
   color: #fff;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 3s linear infinite;
-  display: inline-block;
-}
-
-@keyframes shine {
-  margin-right: auto;
-  font-size: 1.05rem;
-}
-
-.btn-pyme {
-  background-color: #f6b740;
-  color: #091e2d;
   font-weight: 600;
   transition: all 0.3s ease;
   padding: 0.75rem 2rem;
@@ -1287,6 +1274,7 @@ a.footer-contact-item:hover {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
