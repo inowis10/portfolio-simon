@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
-import { CaretLeft, CaretRight } from '@phosphor-icons/react'
+import { CaretLeft, CaretRight, Image as ImageIcon } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
+import { projectsData } from '../data/projectsData'
 
 function Projects() {
     const scrollRef = useRef(null)
@@ -9,44 +10,8 @@ function Projects() {
     const [isAutoScrolling, setIsAutoScrolling] = useState(true)
     const [isHeaderVisible, setIsHeaderVisible] = useState(false)
 
-    const projects = [
-        {
-            icon: '📱',
-            title: 'Campaña Digital Integral',
-            description: 'Estrategia completa de marketing digital para marca emergente con resultados medibles.',
-            tags: ['Marketing', 'Redes Sociales']
-        },
-        {
-            icon: '📊',
-            title: 'Análisis de Datos',
-            description: 'Dashboard interactivo para análisis de métricas y optimización de campañas.',
-            tags: ['Analytics', 'Data']
-        },
-        {
-            icon: '🎓',
-            title: 'Curso Online',
-            description: 'Diseño instruccional y desarrollo de contenido educativo para plataforma e-learning.',
-            tags: ['Educación', 'Diseño']
-        },
-        {
-            icon: '🌐',
-            title: 'Gestión de Comunidad',
-            description: 'Estrategia de contenido y community management para marca corporativa.',
-            tags: ['Social Media', 'Contenido']
-        },
-        {
-            icon: '✍️',
-            title: 'Estrategia de Contenido',
-            description: 'Creación y planificación de contenido estratégico para múltiples plataformas.',
-            tags: ['Contenido', 'Estrategia']
-        },
-        {
-            icon: '🚀',
-            title: 'Transformación Digital',
-            description: 'Acompañamiento en proceso de digitalización y automatización de procesos.',
-            tags: ['Digital', 'Automatización']
-        }
-    ]
+    // Usar datos centralizados
+    const projects = projectsData
 
     const scrollToIndex = (index) => {
         const scrollContainer = scrollRef.current
@@ -158,20 +123,40 @@ function Projects() {
                     {/* Carrusel */}
                     <div className="projects-grid" ref={scrollRef}>
                         {projects.map((project, index) => (
-                            <div key={index} className="project-card slide-up">
-                                <div className="project-image">
-                                    <span>{project.icon}</span>
+                            <Link
+                                key={index}
+                                to={`/proyectos#project-${project.id}`}
+                                className="project-card slide-up"
+                                style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+                            >
+                                <div className="project-image" style={{
+                                    height: '160px',
+                                    background: 'radial-gradient(circle at center, #1a3a52 0%, #091e2d 100%)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    overflow: 'hidden'
+                                }}>
+                                    {project.images && project.images[0] ? (
+                                        <img
+                                            src={project.images[0]}
+                                            alt={project.title}
+                                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                        />
+                                    ) : (
+                                        <ImageIcon size={48} color="rgba(255,255,255,0.2)" />
+                                    )}
                                 </div>
                                 <div className="project-content">
                                     <h3 className="project-title">{project.title}</h3>
-                                    <p className="project-description">{project.description}</p>
+                                    <p className="project-description">{project.shortDescription}</p>
                                     <div className="project-tags">
                                         {project.tags.map((tag, tagIndex) => (
                                             <span key={tagIndex} className="tag">{tag}</span>
                                         ))}
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
 

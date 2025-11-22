@@ -1,92 +1,28 @@
 import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import { CaretLeft, CaretRight, Image as ImageIcon } from '@phosphor-icons/react'
 
-// Importar imágenes de estrategia-redes
-import estrategiaRedes1 from '../assets/projects/estrategia-redes/1.jpg.jpg'
-import estrategiaRedes2 from '../assets/projects/estrategia-redes/2.jpg.jpg'
-import estrategiaRedes3 from '../assets/projects/estrategia-redes/3.jpg.jpg'
-import estrategiaRedes4 from '../assets/projects/estrategia-redes/4.jpg.jpg'
-import estrategiaRedes5 from '../assets/projects/estrategia-redes/5.jpg.jpg'
-import estrategiaRedes6 from '../assets/projects/estrategia-redes/6.jpg.jpg'
-
-// Importar imágenes de gestion-redes
-import gestionRedes1 from '../assets/projects/gestion-redes/1.jpg.png'
-import gestionRedes2 from '../assets/projects/gestion-redes/2.jpg.png'
-import gestionRedes3 from '../assets/projects/gestion-redes/3.jpg.png'
-import gestionRedes4 from '../assets/projects/gestion-redes/4.jpg.png'
-import gestionRedes5 from '../assets/projects/gestion-redes/5.jpg.png'
-import gestionRedes6 from '../assets/projects/gestion-redes/6.jpg.png'
-
-// Importar imágenes de campana-digital
-import campanaDigital1 from '../assets/projects/campana-digital/1.jpg.jpg'
-import campanaDigital2 from '../assets/projects/campana-digital/2.jpg.jpg'
-import campanaDigital3 from '../assets/projects/campana-digital/3.jpg.jpg'
-import campanaDigital4 from '../assets/projects/campana-digital/4.jpg.jpg'
-import campanaDigital5 from '../assets/projects/campana-digital/5.jpg.jpg'
-import campanaDigital6 from '../assets/projects/campana-digital/6.jpg.jpg'
+import { projectsData } from '../data/projectsData'
 
 function ProjectsPage() {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+    const location = useLocation()
 
-    // Datos de los proyectos (Plantilla para editar)
-    const projects = [
-        {
-            id: 1,
-            title: 'Campaña digital integral',
-            category: 'Marketing Digital',
-            description: 'Estrategia completa de marketing digital para una marca emergente, optimizando contenido, pauta y analítica para obtener resultados medibles..',
-            objective: 'Con Uniformes Valet quise aumentar el reconocimiento de marca y generar leads cualificados en un periodo de 3 meses.',
-            tools: ['Google Ads', 'Meta Business', 'Analytics', 'Illustrator'],
-            images: [campanaDigital1, campanaDigital2, campanaDigital3, campanaDigital4, campanaDigital5, campanaDigital6] // Array de 6 imágenes
-        },
-        {
-            id: 2,
-            title: 'Gestión de redes y contenido',
-            category: 'Community Manager',
-            description: 'Planificación, creación de contenido y gestión diaria de la comunidad, aplicando buenas prácticas de tono, identidad digital y análisis de métricas.',
-            objective: 'Impulsar el crecimiento orgánico y mejorar la interacción semanal en redes sociales de Street Coins empresa dedicada a la venta de productos con estampados personalizados.',
-            tools: ['Meta Business', 'Canva', 'Analytics', 'Semrush'],
-            images: [gestionRedes1, gestionRedes2, gestionRedes3, gestionRedes4, gestionRedes5, gestionRedes6]
-        },
-        {
-            id: 3,
-            title: 'Estrategia de redes para marca de servicios',
-            category: 'Community Manager',
-            description: 'Desarrollo de parrillas de contenido, storytelling aplicado a marca y optimización constante según insights mensuales.',
-            objective: 'Construir una presencia digital sólida y aumentar el engagement mensual de la panadería Dolci da Forno, a través de contenido alineado con la marca y su frase "sabor casero".',
-            tools: ['Meta Ads', 'Canva', 'Hootsuite', 'Premiere'],
-            images: [estrategiaRedes1, estrategiaRedes2, estrategiaRedes3, estrategiaRedes4, estrategiaRedes5, estrategiaRedes6]
-        },
-        {
-            id: 4,
-            title: 'Optimización On-Page y de contenidos',
-            category: 'SEO',
-            description: 'Auditoría SEO, ajustes técnicos, optimización de contenido y monitoreo continuo del rendimiento orgánico.',
-            objective: 'Mejorar el posicionamiento orgánico y aumentar el tráfico cualificado.',
-            tools: ['Semrush', 'Analytics', 'Wordpress', 'Search Console'],
-            images: [null, null, null, null, null, null]
-        },
-        {
-            id: 5,
-            title: 'Creación de curso digital',
-            category: 'Diseño Instruccional',
-            description: 'Desarrollo de contenidos, guionización de módulos, diseño visual y estructuración de actividades evaluativas con foco en claridad y usabilidad.',
-            objective: 'Diseñar un curso claro, práctico y estructurado para capacitar a usuarios sobre un proceso o herramienta.',
-            tools: ['Canva', 'Wordpress', 'Moodle', 'Capcut'],
-            images: [null, null, null, null, null, null]
-        },
-        {
-            id: 6,
-            title: 'Transformación Digital',
-            category: 'Consultoría',
-            description: 'Acompañamiento en proceso de digitalización y automatización de procesos.',
-            objective: 'Modernizar los flujos de trabajo internos para mejorar la eficiencia operativa.',
-            tools: ['Zapier', 'Slack', 'Trello', 'Cloud'],
-            images: [null, null, null, null, null, null]
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.replace('#', '')
+            const element = document.getElementById(id)
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: 'smooth' })
+                }, 100)
+            }
+        } else {
+            window.scrollTo(0, 0)
         }
-    ]
+    }, [location])
+
+    // Usar datos centralizados
+    const projects = projectsData
 
     return (
         <div style={{ backgroundColor: '#091e2d', minHeight: '100vh', paddingBottom: '100px' }}>
@@ -154,7 +90,7 @@ function ProjectSection({ project, index }) {
     }
 
     return (
-        <section className="fade-in" style={{
+        <section id={`project-${project.id}`} className="fade-in" style={{
             minHeight: '80vh',
             display: 'flex',
             alignItems: 'center',
