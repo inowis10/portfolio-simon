@@ -49,18 +49,6 @@ function ProjectsPage() {
             objective: 'Impulsar el crecimiento orgánico y mejorar la interacción semanal en redes sociales de Street Coins empresa dedicada a la venta de productos con estampados personalizados.',
             tools: ['Meta Business', 'Canva', 'Analytics', 'Semrush'],
             images: [gestionRedes1, gestionRedes2, gestionRedes3, gestionRedes4, gestionRedes5, gestionRedes6]
-        },
-        {
-            id: 3,
-            title: 'Estrategia de redes para marca de servicios',
-            category: 'Community Manager',
-            description: 'Desarrollo de parrillas de contenido, storytelling aplicado a marca y optimización constante según insights mensuales.',
-            objective: 'Construir una presencia digital sólida y aumentar el engagement mensual de la panadería Dolci da Forno, a través de contenido alineado con la marca y su frase "sabor casero''.',
-            tools: ['Meta Ads', 'Canva', 'Hootsuite', 'Premiere'],
-            images: [estrategiaRedes1, estrategiaRedes2, estrategiaRedes3, estrategiaRedes4, estrategiaRedes5, estrategiaRedes6]
-        },
-        {
-            id: 4,
             title: 'Optimización On-Page y de contenidos',
             category: 'SEO',
             description: 'Auditoría SEO, ajustes técnicos, optimización de contenido y monitoreo continuo del rendimiento orgánico.',
