@@ -1887,3 +1887,44 @@ a.footer-contact-item:hover {
         font-size: 1.25rem !important;
     }
 }
+
+/* ========================================
+   FOOTER - CONTACT ALIGNMENT FIX
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Fix footer contact items alignment */
+    .footer-contact-item {
+        display: flex !important;
+        align-items: center !important;
+        gap: 0.75rem !important;
+        text-align: left !important;
+        justify-content: flex-start !important;
+    }
+
+    .footer-contact {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 1rem !important;
+    }
+
+    .footer-column {
+        text-align: center !important;
+    }
+
+    .footer-column h3 {
+        text-align: center !important;
+    }
+
+    /* Ensure contact items start from left when footer is centered */
+    .footer-contact {
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    .footer-contact-item {
+        width: auto !important;
+        max-width: 300px !important;
+    }
+}

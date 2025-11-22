@@ -33,20 +33,19 @@ const WelcomeModal = () => {
                 </button>
                 <div className="welcome-modal-inner">
                     <div className="welcome-icon">👋</div>
-                    <h2 className="welcome-title">¡Hola! Soy Simón</h2>
-                    <p className="welcome-subtitle">Periodista Digital & Desarrollador Web</p>
+                    <h2 className="welcome-title">¡Hola! Soy Simón Labraña Arias</h2>
+                    <p className="welcome-subtitle">Periodista Digital & Marketing Digital</p>
                     <p className="welcome-text">
-                        Bienvenido a mi espacio digital. Aquí encontrarás mis proyectos de comunicación,
-                        estrategias digitales y desarrollos web que fusionan creatividad con tecnología.
+                        Aquí encontrarás mis proyectos y estrategias donde fusiono mi experiencia profesional con una pasión autodidacta por la tecnología y el desarrollo web.
                     </p>
                     <div className="welcome-highlights">
                         <div className="highlight-item">
-                            <span className="highlight-icon">📱</span>
+                            <span className="highlight-icon">🚀</span>
                             <span>Marketing Digital</span>
                         </div>
                         <div className="highlight-item">
-                            <span className="highlight-icon">💻</span>
-                            <span>Desarrollo Web</span>
+                            <span className="highlight-icon">📲</span>
+                            <span>Redes Sociales</span>
                         </div>
                         <div className="highlight-item">
                             <span className="highlight-icon">✍️</span>
